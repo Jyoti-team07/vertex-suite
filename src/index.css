@@ -1,13 +1,258 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+  }
+
+  body {
+    @apply bg-white text-gray-900 overflow-x-hidden;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+  /* Glassmorphism card */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-card-light {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  /* Green glow effect */
+  .green-glow {
+    box-shadow: 0 0 30px rgba(37, 211, 102, 0.3), 0 0 60px rgba(37, 211, 102, 0.1);
+  }
+
+  .green-glow-sm {
+    box-shadow: 0 0 15px rgba(37, 211, 102, 0.2);
+  }
+
+  /* Purple glow */
+  .purple-glow {
+    box-shadow: 0 0 30px rgba(108, 92, 231, 0.4);
+  }
+
+  /* Text gradient */
+  .text-gradient-green {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-purple {
+    background: linear-gradient(135deg, #6C5CE7 0%, #a29bfe 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Section padding */
+  .section-padding {
+    @apply py-16 md:py-24 px-4 md:px-8;
+  }
+
+  /* Button styles */
+  .btn-primary {
+    @apply bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200 hover:shadow-lg hover:scale-105 inline-flex items-center gap-2;
+  }
+
+  .btn-secondary {
+    @apply border border-white/30 hover:border-green-500 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200 hover:bg-white/10 inline-flex items-center gap-2;
+  }
+
+  .btn-purple {
+    @apply bg-purple-500 hover:bg-purple-600 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200 hover:shadow-lg hover:scale-105 inline-flex items-center gap-2;
+  }
+}
+
+/* Marquee animation */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-track {
+  display: inline-flex;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Particle / grid background */
+.hero-grid {
+  background-image: 
+    linear-gradient(rgba(37, 211, 102, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 211, 102, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Animated gradient orbs */
+.orb {
+  border-radius: 50%;
+  filter: blur(80px);
+  position: absolute;
+  animation: float 8s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-30px) scale(1.05); }
+}
+
+/* WhatsApp message bubble animation */
+.msg-bubble {
+  animation: slideInRight 0.5s ease forwards;
+  opacity: 0;
+}
+
+.msg-bubble-left {
+  animation: slideInLeft 0.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(30px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-30px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* Scroll-triggered counter */
+.counter-value {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F0F1A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #25D366;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #128C7E;
+}
+
+/* Pricing toggle */
+.pricing-toggle {
+  transition: all 0.3s ease;
+}
+
+/* Feature card hover */
+.feature-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(37, 211, 102, 0.15), 0 0 0 1px rgba(37, 211, 102, 0.3);
+}
+
+/* Nav link underline animation */
+.nav-link-animated {
+  position: relative;
+}
+
+.nav-link-animated::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #25D366;
+  transition: width 0.3s ease;
+}
+
+.nav-link-animated:hover::after,
+.nav-link-animated.active::after {
+  width: 100%;
+}
+
+/* Phone mockup */
+.phone-frame {
+  background: linear-gradient(145deg, #2a2a3e, #1a1a2e);
+  border: 2px solid rgba(37, 211, 102, 0.3);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.5), 0 0 40px rgba(37, 211, 102, 0.1);
+}
+
+/* Dashboard mockup */
+.dashboard-card {
+  background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Shimmer effect */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, transparent, rgba(37,211,102,0.1), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* ─── GLOBAL MOBILE OVERFLOW PREVENTION ─────────────── */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Prevent any element from causing horizontal scroll */
+* {
+  min-width: 0;
+}
+
+/* ─── RESPONSIVE SECTION PADDING ────────────────────── */
+@media (max-width: 480px) {
+  .section-padding {
+    @apply py-10 px-4;
+  }
+}
+
+/* ─── MARQUEE: reduce item size on mobile ────────────── */
+@media (max-width: 640px) {
+  .marquee-track > div {
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }
