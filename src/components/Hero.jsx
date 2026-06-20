@@ -236,17 +236,6 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center min-h-screen lg:min-h-0 lg:py-24">
           {/* Left content */}
           <div className="pt-8 lg:pt-0">
-            {/* Badge */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 glass-card border border-green-500/30 rounded-full px-4 py-2 mb-6"
-            >
-              <span className="text-lg">🚀</span>
-              <span className="text-green-400 text-sm font-medium">#1 WhatsApp Business API Platform in India</span>
-            </motion.div>
-
             {/* Headline */}
             <motion.h1
               initial={{ opacity: 0, y: 30 }}

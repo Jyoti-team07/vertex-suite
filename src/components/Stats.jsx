@@ -105,28 +105,7 @@ export default function Stats() {
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-14"
-        >
-          <div className="inline-flex items-center gap-2 glass-card border border-green-500/20 rounded-full px-4 py-2 mb-4">
-            <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-            <span className="text-green-400 text-sm font-medium">Platform Impact</span>
-          </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
-            Numbers That Speak for{' '}
-            <span className="text-gradient-green">Themselves</span>
-          </h2>
-          <p className="text-gray-400 text-base md:text-lg max-w-xl mx-auto">
-            Real results from real businesses using Vertex Suite every single day.
-          </p>
-        </motion.div>
-
-        {/* Stats grid */}
+        {/* Stats grid — no header, straight to the numbers */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {stats.map((stat, i) => (
             <StatCard key={stat.label} stat={stat} index={i} />

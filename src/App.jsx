@@ -16,7 +16,6 @@ import Stats from './components/Stats';
 import Testimonials from './components/Testimonials';
 import BlogSection from './components/BlogSection';
 import CTABanner from './components/CTABanner';
-import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import WhatsAppFloat from './components/WhatsAppFloat';
 
@@ -26,7 +25,6 @@ export default function App() {
       {/* Sticky navigation */}
       <Navbar />
 
-      {/* Main content */}
       <main>
         <Hero />
         <TrustedBy />
@@ -41,13 +39,9 @@ export default function App() {
         <Testimonials />
         <BlogSection />
         <CTABanner />
-        <ContactForm />
       </main>
 
-      {/* Footer */}
       <Footer />
-
-      {/* Floating WhatsApp CTA — always visible */}
       <WhatsAppFloat />
     </div>
   );

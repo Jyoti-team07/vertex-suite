@@ -1,5 +1,5 @@
 // src/components/BlogSection.jsx
-// 3-column blog card grid
+// 3-column blog card grid with real images
 
 import React from 'react';
 import { motion } from 'framer-motion';
@@ -13,48 +13,55 @@ function BlogCard({ blog, index }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.12, duration: 0.5 }}
-      className="group bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+      className="group bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col"
     >
-      {/* Image placeholder */}
-      <div
-        className="h-48 relative overflow-hidden"
-        style={{ background: `linear-gradient(135deg, ${blog.gradientFrom} 0%, ${blog.gradientTo} 100%)` }}
-      >
-        {/* Decorative pattern */}
-        <div className="absolute inset-0 opacity-20"
-          style={{
-            backgroundImage: 'radial-gradient(circle at 20% 80%, rgba(255,255,255,0.3) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255,255,255,0.2) 0%, transparent 50%)',
+      {/* Blog image */}
+      <div className="relative overflow-hidden h-48 flex-shrink-0">
+        <img
+          src={blog.image}
+          alt={blog.title}
+          loading="lazy"
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          onError={(e) => {
+            // Fallback gradient if image fails
+            e.currentTarget.style.display = 'none';
+            e.currentTarget.parentElement.style.background =
+              `linear-gradient(135deg, #1A1A2E 0%, #16213E 100%)`;
           }}
         />
-        <div className="absolute bottom-4 left-4">
+
+        {/* Category badge over image */}
+        <div className="absolute bottom-3 left-3">
           <span
             className="text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm"
-            style={{ backgroundColor: blog.accentColor + '30', color: blog.accentColor, border: `1px solid ${blog.accentColor}40` }}
+            style={{
+              backgroundColor: blog.accentColor + '25',
+              color: blog.accentColor,
+              border: `1px solid ${blog.accentColor}50`,
+            }}
           >
             {blog.category}
           </span>
         </div>
-        <div className="absolute top-4 right-4">
-          <div className="w-10 h-10 rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center">
-            <span className="text-2xl">📱</span>
+
+        {/* Read time badge */}
+        <div className="absolute top-3 right-3">
+          <div
+            className="flex items-center gap-1 text-xs font-medium px-2.5 py-1 rounded-full backdrop-blur-sm bg-black/40 text-white"
+          >
+            <Clock size={11} />
+            {blog.readTime}
           </div>
         </div>
       </div>
 
       {/* Content */}
-      <div className="p-6">
-        {/* Meta */}
-        <div className="flex items-center gap-3 text-gray-400 text-xs mb-3">
-          <span>{blog.date}</span>
-          <span>•</span>
-          <div className="flex items-center gap-1">
-            <Clock size={12} />
-            <span>{blog.readTime}</span>
-          </div>
-        </div>
+      <div className="p-5 flex flex-col flex-1">
+        {/* Date */}
+        <span className="text-gray-400 text-xs mb-2.5">{blog.date}</span>
 
         {/* Title */}
-        <h3 className="text-dark-800 font-bold text-lg leading-snug mb-3 group-hover:text-green-700 transition-colors line-clamp-2">
+        <h3 className="text-dark-800 font-bold text-base leading-snug mb-3 group-hover:text-green-700 transition-colors line-clamp-2 flex-1">
           {blog.title}
         </h3>
 
@@ -64,7 +71,7 @@ function BlogCard({ blog, index }) {
         </p>
 
         {/* Read more */}
-        <div className="flex items-center gap-2 text-green-600 font-semibold text-sm group-hover:gap-3 transition-all duration-200">
+        <div className="flex items-center gap-1.5 text-green-600 font-semibold text-sm group-hover:gap-3 transition-all duration-200 mt-auto">
           <span>Read More</span>
           <ArrowRight size={14} />
         </div>

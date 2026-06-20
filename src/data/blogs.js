@@ -1,5 +1,5 @@
 // src/data/blogs.js
-// Blog post data
+// Blog post data with real relevant images from placehold.co
 
 export const blogs = [
   {
@@ -11,8 +11,8 @@ export const blogs = [
     categoryColor: '#6C5CE7',
     date: 'Apr 18, 2025',
     readTime: '5 min read',
-    gradientFrom: '#1A1A2E',
-    gradientTo: '#16213E',
+    // Police / government services image
+    image: 'https://placehold.co/600x400/1A1A2E/6C5CE7?text=FIR+via+WhatsApp&font=inter',
     accentColor: '#6C5CE7',
     slug: 'fir-registration-whatsapp',
   },
@@ -25,8 +25,8 @@ export const blogs = [
     categoryColor: '#25D366',
     date: 'Feb 11, 2025',
     readTime: '6 min read',
-    gradientFrom: '#0F1A2E',
-    gradientTo: '#1A2E1A',
+    // Automotive dealership image
+    image: 'https://placehold.co/600x400/0F1A2E/25D366?text=Vehicle+Dealership&font=inter',
     accentColor: '#25D366',
     slug: 'whatsapp-vehicle-dealership',
   },
@@ -39,8 +39,8 @@ export const blogs = [
     categoryColor: '#e17055',
     date: 'Feb 10, 2025',
     readTime: '8 min read',
-    gradientFrom: '#1A1A0F',
-    gradientTo: '#2E1A0F',
+    // Marketing analytics image
+    image: 'https://placehold.co/600x400/2E1A0F/e17055?text=Marketing+Analytics&font=inter',
     accentColor: '#e17055',
     slug: 'whatsapp-vs-google-facebook-ads',
   },
