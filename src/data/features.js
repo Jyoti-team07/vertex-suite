@@ -1,5 +1,5 @@
 // src/data/features.js
-// Core platform features data
+// Core platform features — content from vertexsuite.in
 
 export const features = [
   {
@@ -7,15 +7,15 @@ export const features = [
     icon: 'ShoppingCart',
     title: 'Commerce Settings',
     description:
-      'Showcase products with a user-friendly cart & catalog. Enable smooth browsing, purchasing, and easy product management — all from one interface.',
+      'Showcase Products and Services with User-Friendly Cart and Catalog: Enable Smooth Browsing and Purchasing, Simplify Product Management, and Easily Manage Cart and Catalog Visibility.',
     color: '#25D366',
   },
   {
     id: 2,
     icon: 'Phone',
-    title: 'Manage Multiple WhatsApp Numbers',
+    title: 'Manage Multiple Numbers',
     description:
-      'Handle multiple WhatsApp Business numbers from a single unified dashboard. No switching, no confusion — just seamless multi-account control.',
+      'Effortlessly Handle Multiple WhatsApp Numbers: Streamline Conversations with a Single Dashboard.',
     color: '#25D366',
   },
   {
@@ -23,7 +23,7 @@ export const features = [
     icon: 'Bot',
     title: 'Custom Chatbot Builder',
     description:
-      'Build powerful chatbots without a single line of code. Automate support, capture leads, and boost engagement 24/7 with smart flows.',
+      'Automate Customer Interactions with Code-Free Chatbot Creation: Improve Support, Engagement, and Efficiency.',
     color: '#25D366',
   },
   {
@@ -31,15 +31,15 @@ export const features = [
     icon: 'Zap',
     title: 'Seamless Integration',
     description:
-      'Connect with top e-commerce platforms, notify customers & sellers automatically, and streamline all your operations end-to-end.',
+      'Seamless Integration with E-commerce Platforms: Notify Users and Sellers, Streamline Operations, and Enhance Customer Experience.',
     color: '#25D366',
   },
   {
     id: 5,
     icon: 'Users',
-    title: 'Multi-Agent Team Management',
+    title: 'Manage Multi-Agent Teams',
     description:
-      'Assign conversations to the right agents, collaborate in real time, and deliver faster, more consistent customer support at scale.',
+      'Seamless Team Collaboration for Maximum Productivity: Assign Agents, Streamline Communication, and Foster Efficient Customer Support.',
     color: '#25D366',
   },
   {
@@ -47,72 +47,25 @@ export const features = [
     icon: 'Send',
     title: 'Schedule Broadcast',
     description:
-      'Reach thousands of customers with scheduled, targeted WhatsApp broadcasts. Promote offers, share updates, and increase brand visibility effortlessly.',
+      'Reach a Broader Audience with Scheduled Automated Broadcasts: Engage, Promote, and Increase Brand Visibility with Targeted Messaging.',
     color: '#25D366',
   },
 ];
 
 export const socialCommerceFeatures = [
   'Template Messages',
-  'Product Catalog',
-  'Cart Management',
-  'Customer Address Info',
-  'Edit Profile & Business Info',
-  'Compliance & Policy Info',
-  'Real-time Order Tracking',
-];
-
-export const marketplaceStats = [
-  { value: '1M+', label: 'Orders Synced' },
-  { value: '3', label: 'Marketplaces Supported' },
-  { value: '60%', label: 'Time Saved' },
-];
-
-export const shipmentBenefits = [
-  {
-    icon: 'TrendingDown',
-    title: 'Cut Delivery Costs',
-    description: 'Consolidate shipments across couriers and reduce per-order delivery costs by up to 30% with smart pooling algorithms.',
-  },
-  {
-    icon: 'Handshake',
-    title: 'Best Partner Rates',
-    description: 'Leverage our network of 50+ courier partners to always get the most competitive rates for every delivery zone.',
-  },
-  {
-    icon: 'MapPin',
-    title: 'Real-time Tracking',
-    description: 'Keep customers informed with end-to-end shipment tracking updates delivered automatically via WhatsApp.',
-  },
-];
-
-export const vendorFeatures = [
-  {
-    icon: 'LayoutDashboard',
-    title: 'Centralized Dashboard',
-    description: 'Manage all vendor accounts, performance, and payments from one unified control panel.',
-  },
-  {
-    icon: 'Package',
-    title: 'Manage SKUs',
-    description: 'Track, update, and organize thousands of SKUs across multiple vendors with ease.',
-  },
-  {
-    icon: 'Truck',
-    title: 'Streamline Shipments',
-    description: 'Automate shipment assignments and track vendor-wise fulfillment status in real time.',
-  },
-  {
-    icon: 'MessageSquare',
-    title: 'Engage Sellers',
-    description: 'Communicate with sellers directly via WhatsApp broadcasts and automated notifications.',
-  },
+  'Catalog',
+  'Cart',
+  'Address Info',
+  'Edit Profile',
+  'Compliance Info',
+  'Order Tracking',
 ];
 
 export const channelIcons = [
-  { name: 'WhatsApp', color: '#25D366', bg: '#dcfce7' },
+  { name: 'WhatsApp',  color: '#25D366', bg: '#dcfce7' },
   { name: 'Instagram', color: '#E1306C', bg: '#fce7f3' },
-  { name: 'Facebook', color: '#1877F2', bg: '#dbeafe' },
+  { name: 'Facebook',  color: '#1877F2', bg: '#dbeafe' },
   { name: 'Twitter/X', color: '#000000', bg: '#f3f4f6' },
-  { name: 'Telegram', color: '#0088cc', bg: '#dbeafe' },
+  { name: 'Telegram',  color: '#0088cc', bg: '#dbeafe' },
 ];

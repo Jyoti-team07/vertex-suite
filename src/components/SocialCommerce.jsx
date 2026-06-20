@@ -206,13 +206,14 @@ export default function SocialCommerce() {
             </div>
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-dark-800 mb-5 leading-tight">
-              Unlock Social Commerce{' '}
-              <span className="text-gradient-green">Success</span>
+              Unlock the Social Commerce{' '}
+              <span className="text-gradient-green">success.</span>
             </h2>
 
             <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
-              Transform WhatsApp into your most powerful sales channel. Enable customers to browse
-              catalogs, add to cart, and complete purchases — all without leaving the chat.
+              Dominate the market, engage customers, and drive sales effortlessly. Elevate
+              your strategy, transform interactions, and unleash your business's full potential.
+              Experience the power of WhatsApp chatbots for seamless social commerce success.
             </p>
 
             {/* Feature list */}

@@ -93,14 +93,15 @@ export default function AdsManager() {
             </div>
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-dark-800 mb-4 leading-tight">
-              Create, Schedule & Track Ads{' '}
+              Create, Schedule, &amp; Track Ads with Ease{' '}
               <span className="text-gradient-green">Across Multiple Channels</span>
             </h2>
 
             <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
-              Run Facebook, Google, and Instagram ads from a single interface. Monitor
-              performance, optimize budgets, and get unified reports — no more platform-hopping
-              or fragmented data.
+              Maximize your marketing potential with our comprehensive platform. Create,
+              schedule, and track ads across multiple channels seamlessly. Gain valuable insights
+              into ad performance, all in one place. Simplify your marketing workflow with our
+              integrated solution.
             </p>
 
             {/* Platform pills */}

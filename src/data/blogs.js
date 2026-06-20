@@ -1,47 +1,85 @@
-// src/data/blogs.js
-// Blog post data with real relevant images from placehold.co
+// src/data/blogs.js — all articles from vertexsuite.in
 
 export const blogs = [
   {
     id: 1,
-    title: 'How Police Departments Can Register FIRs via WhatsApp',
-    excerpt:
-      'Discover how government agencies and law enforcement are leveraging WhatsApp Business API to streamline citizen services, reduce paperwork, and make FIR registration accessible 24/7.',
-    category: 'Government & Public Services',
-    categoryColor: '#6C5CE7',
-    date: 'Apr 18, 2025',
-    readTime: '5 min read',
-    // Police / government services image
+    title: 'How Police Departments Can Register Complaints or FIRs via WhatsApp – A Simple Guide for 2025',
+    category: 'Blog',
+    date: 'April 18, 2025',
     image: 'https://placehold.co/600x400/1A1A2E/6C5CE7?text=FIR+via+WhatsApp&font=inter',
     accentColor: '#6C5CE7',
-    slug: 'fir-registration-whatsapp',
+    link: 'https://vertexsuite.in/how-police-departments-can-register-complaints-or-firs-via-whatsapp-a-simple-guide-for-2025/',
   },
   {
     id: 2,
     title: 'Using WhatsApp Business API to Transform Vehicle Dealership Experience',
-    excerpt:
-      'Learn how leading automobile dealerships are using WhatsApp to handle test drive bookings, send service reminders, share vehicle catalogs, and close deals faster than ever before.',
-    category: 'Automotive & Sales',
-    categoryColor: '#25D366',
-    date: 'Feb 11, 2025',
-    readTime: '6 min read',
-    // Automotive dealership image
+    category: 'Blog',
+    date: 'February 11, 2025',
     image: 'https://placehold.co/600x400/0F1A2E/25D366?text=Vehicle+Dealership&font=inter',
     accentColor: '#25D366',
-    slug: 'whatsapp-vehicle-dealership',
+    link: 'https://vertexsuite.in/using-whatsapp-business-api-to-transform-vehicle-dealership-experience/',
   },
   {
     id: 3,
-    title: 'WhatsApp Business API vs. Google & Facebook Ads for Data Insights',
-    excerpt:
-      'A deep-dive comparison of customer data collection and audience targeting between WhatsApp Business API, Google Ads, and Facebook Ads — which gives you better ROI for your business?',
-    category: 'Marketing & Analytics',
-    categoryColor: '#e17055',
-    date: 'Feb 10, 2025',
-    readTime: '8 min read',
-    // Marketing analytics image
+    title: 'WhatsApp Business API vs. Google & Facebook Ads for Data Insights & Analysis',
+    category: 'Blog',
+    date: 'February 10, 2025',
     image: 'https://placehold.co/600x400/2E1A0F/e17055?text=Marketing+Analytics&font=inter',
     accentColor: '#e17055',
-    slug: 'whatsapp-vs-google-facebook-ads',
+    link: 'https://vertexsuite.in/whatsapp-business-api-vs-google-facebook-ads-for-data-insights-analysis/',
+  },
+  {
+    id: 4,
+    title: 'Bridging Gaps in Indian Education System through WhatsApp Business API',
+    category: 'Blog',
+    date: 'February 7, 2025',
+    image: 'https://placehold.co/600x400/0F2E1A/128C7E?text=Education+%26+WhatsApp&font=inter',
+    accentColor: '#128C7E',
+    link: 'https://vertexsuite.in/smart-education-with-whatsapp-api-learning-made-easy/',
+  },
+  {
+    id: 5,
+    title: 'WhatsApp Business API: Hassle-Free Hospital Appointments & Services',
+    category: 'Blog',
+    date: 'February 4, 2025',
+    image: 'https://placehold.co/600x400/1A0F2E/6C5CE7?text=Hospital+Appointments&font=inter',
+    accentColor: '#6C5CE7',
+    link: 'https://vertexsuite.in/whatsapp-business-api-hassle-free-hospital-appointments-services/',
+  },
+  {
+    id: 6,
+    title: 'Hidden struggles in higher education can be solved by WhatsApp API',
+    category: 'Blog',
+    date: 'February 1, 2025',
+    image: 'https://placehold.co/600x400/0F1A2E/25D366?text=Higher+Education&font=inter',
+    accentColor: '#25D366',
+    link: 'https://vertexsuite.in/hidden-struggles-in-higher-education-can-be-solved-by-whatsapp-api/',
+  },
+  {
+    id: 7,
+    title: 'Simplify Logistics with WhatsApp: Smarter, Faster, Better',
+    category: 'Blog',
+    date: 'January 29, 2025',
+    image: 'https://placehold.co/600x400/2E1A0F/e17055?text=Logistics+%26+WhatsApp&font=inter',
+    accentColor: '#e17055',
+    link: 'https://vertexsuite.in/simplify-logistics-with-whatsapp-smarter-faster-better/',
+  },
+  {
+    id: 8,
+    title: 'Voting Registration and Updates with WhatsApp',
+    category: 'Blog',
+    date: 'January 31, 2025',
+    image: 'https://placehold.co/600x400/0F2E1A/128C7E?text=Voting+%26+WhatsApp&font=inter',
+    accentColor: '#128C7E',
+    link: 'https://vertexsuite.in/voting-registration-and-updates-with-whatsapp/',
+  },
+  {
+    id: 9,
+    title: 'Public Scheme Awareness Campaigns with WhatsApp',
+    category: 'Blog',
+    date: 'February 1, 2025',
+    image: 'https://placehold.co/600x400/1A1A2E/6C5CE7?text=Public+Awareness&font=inter',
+    accentColor: '#6C5CE7',
+    link: 'https://vertexsuite.in/public-scheme-awareness-campaigns-with-whatsapp/',
   },
 ];

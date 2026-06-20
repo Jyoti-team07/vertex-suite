@@ -128,8 +128,11 @@ export default function VendorManagement() {
             </h2>
 
             <p className="text-gray-400 text-base md:text-lg leading-relaxed mb-7">
-              Eliminate the chaos of managing multiple vendor dashboards. Bring all your sellers
-              onto one platform, track performance in real time, and automate communication.
+              Integrate our Vendor Management platform into your workflow to eliminate the
+              challenges of managing multiple vendor dashboards. With a centralized dashboard,
+              you can effortlessly engage with sellers, efficiently manage SKUs, and streamline
+              shipments. Simplify your operations, save time, and enhance efficiency with our
+              comprehensive solution.
             </p>
 
             {/* Feature cards */}

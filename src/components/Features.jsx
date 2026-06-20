@@ -82,15 +82,16 @@ export default function Features() {
         >
           <div className="inline-flex items-center gap-2 glass-card border border-green-500/20 rounded-full px-4 py-2 mb-4">
             <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-            <span className="text-green-400 text-sm font-medium">Platform Features</span>
+            <span className="text-green-400 text-sm font-medium">Social Commerce</span>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
-            Everything Your Business Needs{' '}
-            <span className="text-gradient-green">in One Platform</span>
+            Unlock the{' '}
+            <span className="text-gradient-green">Social Commerce success.</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Stop juggling multiple tools. Vertex Suite unifies your entire business operation —
-            from WhatsApp marketing to marketplace management.
+          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
+            Dominate the market, engage customers, and drive sales effortlessly. Elevate
+            your strategy, transform interactions, and unleash your business's full potential.
+            Experience the power of WhatsApp chatbots for seamless social commerce success.
           </p>
         </motion.div>
 

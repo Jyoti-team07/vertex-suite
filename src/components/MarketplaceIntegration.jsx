@@ -119,14 +119,15 @@ export default function MarketplaceIntegration() {
             </div>
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
-              Centralize Your Marketplace Integration for{' '}
+              Centralize your Marketplace Integration for{' '}
               <span className="text-gradient-green">Smooth Operations</span>
             </h2>
 
             <p className="text-gray-400 text-base md:text-lg leading-relaxed mb-7">
-              Manage Amazon, Flipkart, and Myntra from one unified dashboard. Streamline
-              order placement, inventory management, and track sales performance effortlessly —
-              no more tab-switching or manual reconciliation.
+              Manage multiple marketplaces like Amazon, Flipkart, and Myntra from one
+              dashboard. Streamline order placement, inventory management, and track sales
+              performance effortlessly. Simplify multichannel selling and maximize your reach
+              with ease.
             </p>
 
             {/* Stat cards — responsive 3 cols */}

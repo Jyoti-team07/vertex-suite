@@ -236,27 +236,26 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center min-h-screen lg:min-h-0 lg:py-24">
           {/* Left content */}
           <div className="pt-8 lg:pt-0">
-            {/* Headline */}
+            {/* Headline — exact text from vertexsuite.in */}
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
             >
-              Unlock Digital Success for{' '}
-              <span className="text-gradient-green">Your Business</span>{' '}
-              with All-In-One SaaS
+              Unlock digital success for your business with{' '}
+              <span className="text-gradient-green">all-in-one SaaS solution!</span>
             </motion.h1>
 
-            {/* Subtext */}
+            {/* Subtext — exact from vertexsuite.in */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-gray-400 text-lg md:text-xl leading-relaxed mb-8 max-w-lg"
             >
-              Seamlessly integrate WhatsApp, manage multiple channels, automate chatbots,
-              and drive data-driven growth — all from one powerful dashboard.
+              Seamlessly integrate with multiple apps and maximize your brand's digital
+              potential. Drive data-driven growth and achieve unparalleled success with Vertex Suite.
             </motion.p>
 
             {/* CTAs */}

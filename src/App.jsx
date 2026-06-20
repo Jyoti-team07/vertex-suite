@@ -1,6 +1,3 @@
-// src/App.jsx
-// Main app component — renders all sections in order
-
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -12,7 +9,6 @@ import SharedInbox from './components/SharedInbox';
 import AdsManager from './components/AdsManager';
 import ShipmentPooling from './components/ShipmentPooling';
 import VendorManagement from './components/VendorManagement';
-import Stats from './components/Stats';
 import Testimonials from './components/Testimonials';
 import BlogSection from './components/BlogSection';
 import CTABanner from './components/CTABanner';
@@ -22,9 +18,7 @@ import WhatsAppFloat from './components/WhatsAppFloat';
 export default function App() {
   return (
     <div className="font-inter antialiased">
-      {/* Sticky navigation */}
       <Navbar />
-
       <main>
         <Hero />
         <TrustedBy />
@@ -35,12 +29,10 @@ export default function App() {
         <AdsManager />
         <ShipmentPooling />
         <VendorManagement />
-        <Stats />
         <Testimonials />
         <BlogSection />
         <CTABanner />
       </main>
-
       <Footer />
       <WhatsAppFloat />
     </div>

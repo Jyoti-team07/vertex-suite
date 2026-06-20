@@ -169,11 +169,12 @@ export default function SharedInbox() {
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
             Unify, Simplify, Amplify:{' '}
-            <span className="text-gradient-green">All-in-One Shared Inbox</span>
+            <span className="text-gradient-green">Your All-in-One Shared Inbox Solution</span>
           </h2>
           <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
-            Connect Instagram, Twitter, Facebook, WhatsApp, and more in a single platform.
-            Never miss a conversation, no matter which channel your customers use.
+            Connect Instagram, Twitter, Facebook, WhatsApp, and more in a single platform
+            for Better communication. Simplify your messaging workflow &amp; stay connected with
+            your audience effortlessly.
           </p>
         </motion.div>
 

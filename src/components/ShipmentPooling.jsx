@@ -96,9 +96,9 @@ export default function ShipmentPooling() {
             <span className="text-gradient-green">Cost-Efficient Shipment Pooling</span>
           </h2>
           <p className="text-gray-500 text-base md:text-lg max-w-2xl mx-auto">
-            Stop overpaying for last-mile delivery. Our smart pooling engine connects you
-            to the best courier rates while keeping your customers delighted with real-time
-            tracking on WhatsApp.
+            Cut delivery costs for your online business with Vertex Suite's Shipment Pooling
+            Suite. Secure best rates from various partners, boosting efficiency and growth.
+            E-commerce logistics redefined!
           </p>
         </motion.div>
 
